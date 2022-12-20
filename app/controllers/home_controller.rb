@@ -7,5 +7,6 @@ class HomeController < ApplicationController
     @response = Net::HTTP.get(@uri)
     @coins = JSON.parse(@response)
     @my_coins = ["BTC","ETH","USDT","BNB","ADA"]
+    @i = 0
   end
 end
